@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Node dependencies
         run: npm ci
@@ -35,7 +35,7 @@ jobs:
         run: python srh_jamaica.py
 
       - name: Publish output folder
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Output Files
           path: output
